@@ -9,7 +9,7 @@ const SubmitBtn = ({ formBtn, onClick }) => {
       disabled={isSubmitting}
       onClick={onClick}
     >
-      {isSubmitting ? "submitting" : "submit"}
+      {isSubmitting ? "submitting..." : "submit"}
     </button>
   );
 };
