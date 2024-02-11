@@ -55,24 +55,24 @@ const router = createBrowserRouter([
         element: <DashboardLayout />,
         children: [
           {
-            path: "/dashboard/create-blog",
+            path: "create-blog",
             element: <CreateBlog />,
             action: createBlogAction,
           },
           {
-            path: "/dashboard/edit-blog/:id",
+            path: "edit-blog/:id",
             element: <EditBlog />,
             loader: editBlogLoader,
             action: editBlogAction,
           },
-          { path: "/dashboard/delete-blog/:id", action: deleteBlogAction },
+          { path: "delete-blog/:id", action: deleteBlogAction },
           {
-            path: "/dashboard/contact-user",
+            path: "contact-user",
             element: <ContactUser />,
             loader: contactUserLoader,
           },
           {
-            path: "/dashboard/download-user",
+            path: "download-user",
             element: <DownloadUser />,
             loader: downloadUserLoader,
           },
