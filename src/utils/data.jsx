@@ -134,28 +134,28 @@ export const sourceOfReferralData = {
 export const reviewData = [
   {
     id: 0,
-    image: "user2",
+    image: "user2.jpg",
     review:
       "Demobia's tech and recruitment experts delivered tailored career advice, aligning with my aspirations to become an ICT Project Manager. They crafted a clear action plan that paved the way plus provided ongoing support which was pivotal in actually implementing it. Thanks team!",
     name: "Madi Cook - IT Project Support Officer",
   },
   {
     id: 1,
-    image: "user1",
+    image: "user1.jpg",
     review:
       "I can't express enough how grateful I am to the team at Demobia for the incredible support and guidance they provided me on my journey to landing an IT job in Australia. ",
     name: "Laxmi Joshi - IT Support Engineer",
   },
   {
     id: 2,
-    image: "user3",
+    image: "user3.jpg",
     review:
       "Working with Demobia transformed my career. As an IT professional new to Australia, I struggled to find a fitting role because I didn’t understand how to navigate Canberra’s unique market. Demobia's strategic guidance helped me secure a job that not only matched my expertise but also offered great pay and the chance to lead a team.",
     name: "Maninder Singh -  Lead Front End Developer",
   },
   {
     id: 3,
-    image: "user4",
+    image: "user4.jpg",
     review:
       "Demobia understands my personal journey and their tenacity served as an inspiration to me. Their ability to harness  tech expertise and relate it to my situation was truly invaluable. They not only helped me find the right job but also provided insights into the Australian job market that I couldn't have gained elsewhere.",
     name: "Santosh Ranabhat - IT Support Engineer",
