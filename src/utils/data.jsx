@@ -7,7 +7,7 @@ export const links = [
 
   {
     text: "blog",
-    path: "/blog",
+    path: "blog",
   },
 ];
 
@@ -19,16 +19,16 @@ export const adminUserLinks = [
 
   {
     text: "blog",
-    path: "/blog",
+    path: "blog",
   },
 
   {
     text: "Contact User",
-    path: "/dashboard/contact-user",
+    path: "dashboard/contact-user",
   },
   {
     text: "Download User",
-    path: "/dashboard/download-user",
+    path: "dashboard/download-user",
   },
 ];
 
