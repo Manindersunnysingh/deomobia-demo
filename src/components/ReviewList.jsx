@@ -14,7 +14,7 @@ const ReviewList = () => {
                 <div className="test">
                   <img
                     className="reviewlist-image"
-                    src={`/src/assets/images/${review.image}.jpg`}
+                    src={`src/assets/images/${review.image}.jpg`}
                     alt={review.image}
                   />
                   <img
