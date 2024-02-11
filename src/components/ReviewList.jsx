@@ -8,7 +8,7 @@ const ReviewList = () => {
     <>
       {reviewData.map((review) => {
         if (review.id === reviewNumber) {
-          const imagePath = `/src/assets/images/${review.image}.png`;
+          const imagePath = `/images/${review.image}.png`;
           console.log(imagePath);
           return (
             <div className="reviewlist-container" key={review.id}>
