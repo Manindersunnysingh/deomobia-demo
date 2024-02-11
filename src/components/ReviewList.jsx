@@ -8,13 +8,15 @@ const ReviewList = () => {
     <>
       {reviewData.map((review) => {
         if (review.id === reviewNumber) {
+          const imagePath = `/src/assets/images/${review.image}.png`;
+          console.log(imagePath);
           return (
             <div className="reviewlist-container" key={review.id}>
               <div className="reviewlist-image-container">
                 <div className="test">
                   <img
                     className="reviewlist-image"
-                    src={`/src/assets/images/${review.image}`}
+                    src={imagePath}
                     alt={review.image}
                   />
                   <img
