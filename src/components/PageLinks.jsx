@@ -11,12 +11,15 @@ const PageLinks = ({ parentClass, itemClass }) => {
         const { text, path } = link;
         return (
           <li key={text}>
-            {/* <a href={path} className={itemClass}>
-              {text}
-            </a> */}
-            <NavLink to={path} key={text} className={itemClass}>
-              {text}
-            </NavLink>
+            {text === "services" ? (
+              <a href={path} className={itemClass}>
+                {text}
+              </a>
+            ) : (
+              <NavLink to={path} key={text} className={itemClass}>
+                {text}
+              </NavLink>
+            )}
           </li>
         );
       })}
