@@ -67,12 +67,12 @@ const router = createBrowserRouter([
           },
           { path: "/dashboard/delete-blog/:id", action: deleteBlogAction },
           {
-            path: "contact-user",
+            path: "/dashboard/contact-user",
             element: <ContactUser />,
             loader: contactUserLoader,
           },
           {
-            path: "download-user",
+            path: "/dashboard/download-user",
             element: <DownloadUser />,
             loader: downloadUserLoader,
           },
