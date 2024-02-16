@@ -35,7 +35,7 @@ export const action = async ({ request }) => {
       createdAt: serverTimestamp(),
     });
     toast.success(
-      "Thank you for reaching out to us. You can expect to receive a response shortly."
+      "Thank you for reaching out to us. You can expect to receive a response shortly.",
     );
     return redirect("/");
   } catch (error) {

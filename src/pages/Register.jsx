@@ -16,7 +16,7 @@ export const action = async ({ request }) => {
     const user = await createUserWithEmailAndPassword(
       auth,
       data.email,
-      data.password
+      data.password,
     );
     if (user) {
       await addDoc(docRef, {

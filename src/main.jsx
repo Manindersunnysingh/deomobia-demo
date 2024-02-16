@@ -15,5 +15,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </SidebarModalProvider>
     </AuthProvider>
     <ToastContainer position="top-center" />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

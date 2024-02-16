@@ -51,7 +51,7 @@ const DownloadUser = () => {
                   <td>
                     {format(
                       fromUnixTime(downloadUser.createdAt.seconds),
-                      "yyyy-MM-dd"
+                      "yyyy-MM-dd",
                     )}
                   </td>
                 </tr>

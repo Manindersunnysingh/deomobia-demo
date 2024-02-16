@@ -9,7 +9,6 @@ const DashboardLayout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log("outside");
     if (user?.role !== "admin") {
       console.log("inside");
       return navigate("/");

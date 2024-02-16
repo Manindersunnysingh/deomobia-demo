@@ -59,7 +59,7 @@ const ContactUser = () => {
                   <td>
                     {format(
                       fromUnixTime(contactUser.createdAt.seconds),
-                      "yyyy-MM-dd"
+                      "yyyy-MM-dd",
                     )}
                   </td>
                 </tr>
