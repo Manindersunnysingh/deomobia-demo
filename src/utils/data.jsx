@@ -35,25 +35,20 @@ export const adminUserLinks = [
 export const resourceData = [
   {
     title: "Overview Template",
-    description: "Golden rule - utilise this at the top of you CV immediately",
+    description:
+      "Implement this on Page 1 of your CV to make an instant impact.",
     image: "Overview-Guide-Demobia.pdf",
   },
   {
     title: "Pitch Template",
     description:
-      "One page pitches are a common request - here’s how to do it well",
+      "Learn the essentials of crafting a succinct and effective pitch.",
     image: "Pitch-Guide-Demobia.pdf",
   },
+
   {
-    title: "Cover letter Template",
-    description:
-      "They are dying, with good reason, but follow these guidelines to stand out",
-    image: "CoverLetter-Guide-Demobia.pdf",
-  },
-  {
-    title: "Resume Template",
-    description:
-      "Discover the small details in CVs which let are letting people down",
+    title: "CV Template",
+    description: "Avoid common errors with our guide to refining your CV.",
     image: "Resume-Guide-Demobia.pdf",
   },
 ];

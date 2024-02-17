@@ -77,9 +77,9 @@ const Services = () => {
             moving.
           </h2>
           <p className="description">
-            Our expert coaching is designed to not only help you secure a job
-            that aligns with your potential, but so you gan clearer insights
-            into yourself and the job market
+            Our coaching is structured to help you secure a role that matches
+            your ambition, while offering deeper insights into both the job
+            market and yourself.
           </p>
 
           <div className="service-card-wrapper">
