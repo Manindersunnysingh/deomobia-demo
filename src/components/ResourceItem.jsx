@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSidebarModalContext } from "../context/SidebarModalContext";
 import { resourceData } from "../utils/data";
-import { FaArrowDownLong } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa";
 import ResourceItemModal from "./ResourceItemModal";
 
 const ResourceItem = () => {
@@ -28,7 +28,7 @@ const ResourceItem = () => {
               className="btn btn-accent pdf-btn"
               onClick={() => handleOpenModal(image)}
             >
-              Download PDF <FaArrowDownLong className="arrow-down" />
+              Download PDF <FaArrowDown className="arrow-down" />
             </button>
             <ResourceItemModal image={selectedImage} />
           </div>

@@ -26,6 +26,7 @@ const Wrapper = styled.section`
     margin-bottom: 20px;
     letter-spacing: 1.2px;
   }
+
   .resource-item-info h4 {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -35,7 +36,8 @@ const Wrapper = styled.section`
     font-size: 0.8rem;
     letter-spacing: 1.2px;
   }
-  .pdf-btn {
+  ${
+    "" /* .pdf-btn {
     padding-right: 35px;
     position: relative;
     .arrow-down {
@@ -43,6 +45,12 @@ const Wrapper = styled.section`
       margin: 0 5px;
       top: 10px;
     }
+  } */
+  }
+  .pdf-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
   }
 
   @media screen and (min-width: 768px) {
