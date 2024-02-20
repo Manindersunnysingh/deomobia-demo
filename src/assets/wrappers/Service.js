@@ -141,8 +141,8 @@ const Wrapper = styled.section`
         }
         .redCurve {
           position: absolute;
-          top: -3px;
-          left: 18px;
+          top: -2px;
+          left: 15px;
         }
         .orangeHexagon {
           height: 50px;
