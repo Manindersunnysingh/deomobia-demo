@@ -12,13 +12,12 @@ const ResourceItemModal = ({ image }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
   });
   const [error, setError] = useState({
     name: "",
     email: "",
-    phone: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +33,7 @@ const ResourceItemModal = ({ image }) => {
   };
 
   const handleClick = async (e, image) => {
-    if (!formData.name || !formData.email || !formData.phone) {
+    if (!formData.name || !formData.email) {
       return;
     }
     const validEmail = validateEmail(formData.email);
@@ -45,11 +44,11 @@ const ResourceItemModal = ({ image }) => {
     const docRef = collection(db, "download_users");
     const storageRef = ref(storage, `Templates/${image}`);
 
+    setIsLoading(true);
     try {
       await addDoc(docRef, {
         name: formData.name,
         email: formData.email,
-        phone: formData.phone,
         createdAt: serverTimestamp(),
       });
 
@@ -77,15 +76,16 @@ const ResourceItemModal = ({ image }) => {
       setFormData({
         name: "",
         email: "",
-        phone: "",
       });
 
       setTimeout(() => {
         closeModal();
-      }, 2000);
+      }, 1000);
     } catch (error) {
       console.log(error);
       toast.error("Error downloading. Please try again...");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -105,18 +105,14 @@ const ResourceItemModal = ({ image }) => {
           value={formData.email}
           onChange={handleChange}
         />
-        <FormRow
-          type="text"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-        />
+
         <button
           type="submit"
           className="btn btn-block btn-primary"
           onClick={(e) => handleClick(e, image)}
+          disabled={isLoading}
         >
-          Download
+          {!isLoading ? "Download" : "Downloading..."}
         </button>
       </form>
     </Modal>

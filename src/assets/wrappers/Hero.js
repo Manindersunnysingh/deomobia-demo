@@ -16,7 +16,8 @@ const Wrapper = styled.section`
     color: var(--clr-white);
     letter-spacing: var(--spacing);
   }
-  .coaching-packages{
+  ${
+    "" /* .coaching-packages{
     margin-top:10px;
     font-weight:700;
     position:relative;
@@ -28,7 +29,20 @@ const Wrapper = styled.section`
   position:absolute;
   top:4px;
   }
+  } */
   }
+  .coaching-packages {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px 5px;
+  height:2rem;
+  .coaching-packages-link { 
+    color: var(--accent-color);
+  }
+  .coaching-packages-link-icon {
+    margin-top:auto;
+  }
+}
 
   .hero-img {
     display: none;

@@ -6,15 +6,15 @@ const Hero = () => {
     <Wrapper id="home">
       <div className="hero">
         <div className="hero-banner">
-          <h3>Unlock career hacks and understand the job market like a pro</h3>
+          <h3>Unlock career hacks to understand the job market like a pro</h3>
           <p>
-            Job hunting is tough—from finding the right role to crafting a
-            winning CV, networking with confidence and avoiding costly mistakes.
+            Job hunting is tough. From finding the perfect role, crafting your
+            winning CV, networking with confidence and avoiding costly mistakes
+            - sometimes it feels like you need to become an expert in hiring.
           </p>
           <p>
-            Sometimes it feels like you need to become an expert in hiring, but
-            we’ve got you covered. Our resources decode it all so you can focus
-            on your field and advance your career.
+            Demobia has you covered. Our resources decode it all so you're free
+            to focus on advancing your career.
           </p>
           <a href="#resources" className="btn btn-primary ">
             View our resources

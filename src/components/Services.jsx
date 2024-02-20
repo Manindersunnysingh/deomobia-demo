@@ -5,6 +5,7 @@ import orangeHexagon from "../assets/images/orangeHexagon.svg";
 import redCurve from "../assets/images/redCurve.svg";
 import redHexagon from "../assets/images/redHexagon.svg";
 import ladder from "../assets/images/ladder.svg";
+import Resource from "./Resource.jsx";
 
 const Services = () => {
   return (
@@ -14,7 +15,7 @@ const Services = () => {
           <div className="info">
             <h4 className="container-1-title">
               The job market is a maze and searching for your dream job can
-              leave you lost
+              leave you lost.
             </h4>
             <p>
               The myriad of job listings, skill requirements, industry jargon or
@@ -41,9 +42,9 @@ const Services = () => {
             <p>
               Whether you’re an entry-level professional or you’ve decided to
               make a career change, breaking into a new and competitive field
-              can seem like an insurmountable task. We’ll help you map a clear
-              pathway.
+              can seem like an insurmountable task.
             </p>
+            <p>Demobia will help you map a clear pathway.</p>
           </div>
         </div>
 
@@ -69,6 +70,8 @@ const Services = () => {
           </p>
         </div>
       </div>
+
+      <Resource />
 
       <div className="container-2" id="services">
         <div className="container-2-center">
