@@ -99,7 +99,11 @@ export const socialIcons = [
     href: "https://www.facebook.com/Demobia/",
     icon: <FaFacebookSquare />,
   },
-  { id: 2, href: "www.linkedin.com/company/demobia/", icon: <FaLinkedin /> },
+  {
+    id: 2,
+    href: "https://www.linkedin.com/company/demobia/",
+    icon: <FaLinkedin />,
+  },
 ];
 
 export const locationData = {
