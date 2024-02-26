@@ -8,6 +8,9 @@ const Wrapper = styled.section`
     margin-bottom: 0;
 
     .box-container-1 {
+      width: 90vw;
+      max-width: 1170px;
+      margin: 0 auto;
       display: flex;
       gap: 50px 50px;
       padding: 0 50px;
