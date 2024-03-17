@@ -11,6 +11,7 @@ import {
   FormRowSelect,
 } from "../components";
 import { toast } from "react-toastify";
+import { validateEmail } from "../utils/validateEmail";
 
 export const action = async ({ request }) => {
   const docRef = collection(db, "contact_requests");
@@ -35,7 +36,7 @@ export const action = async ({ request }) => {
       createdAt: serverTimestamp(),
     });
     toast.success(
-      "Thank you for reaching out to us. You can expect to receive a response shortly.",
+      "Thank you for reaching out to us. You can expect to receive a response shortly."
     );
     return redirect("/");
   } catch (error) {
@@ -51,8 +52,25 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    submit(e.currentTarget.form);
-    e.currentTarget.form?.reset();
+    const form = e.currentTarget.form;
+
+    if (
+      !form.name.value ||
+      !form.email.value ||
+      !form.phone.value ||
+      !form.course.value ||
+      !form.location.value
+    ) {
+      toast.error("Please enter all the fields.");
+      return;
+    }
+    if (!validateEmail(form.email.value)) {
+      console.log(1);
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+    submit(form);
+    form?.reset();
   };
 
   return (
