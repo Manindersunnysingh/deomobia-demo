@@ -5,7 +5,7 @@ import { Loading } from "../components";
 
 const DashboardLayout = () => {
   const { user, userLoading } = useAuthContext();
-  console.log(user);
+  console.log(user, userLoading);
   const navigate = useNavigate();
 
   useEffect(() => {
