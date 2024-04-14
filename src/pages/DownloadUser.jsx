@@ -38,7 +38,7 @@ const DownloadUser = () => {
               <tr>
                 <th>Name</th>
                 <th>Email</th>
-
+                <th>Mobile</th>
                 <th>Created At</th>
               </tr>
             </thead>
@@ -47,7 +47,7 @@ const DownloadUser = () => {
                 <tr key={downloadUser.id}>
                   <td>{downloadUser.name}</td>
                   <td>{downloadUser.email}</td>
-
+                  <td>{downloadUser.phone}</td>
                   <td>
                     {format(
                       fromUnixTime(downloadUser.createdAt.seconds),
