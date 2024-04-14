@@ -12,10 +12,12 @@ const ResourceItemModal = ({ image }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
   });
   const [error, setError] = useState({
     name: "",
     email: "",
+    phone: "",
   });
   const [isLoading, setIsLoading] = useState(false);
 
@@ -33,7 +35,7 @@ const ResourceItemModal = ({ image }) => {
   };
 
   const handleClick = async (e, image) => {
-    if (!formData.name || !formData.email) {
+    if (!formData.name || !formData.email || !formData.phone) {
       return;
     }
     const validEmail = validateEmail(formData.email);
@@ -49,6 +51,7 @@ const ResourceItemModal = ({ image }) => {
       await addDoc(docRef, {
         name: formData.name,
         email: formData.email,
+        phone: formData.phone,
         createdAt: serverTimestamp(),
       });
 
@@ -76,6 +79,7 @@ const ResourceItemModal = ({ image }) => {
       setFormData({
         name: "",
         email: "",
+        phone: "",
       });
 
       setTimeout(() => {
@@ -103,6 +107,13 @@ const ResourceItemModal = ({ image }) => {
           type="email"
           name="email"
           value={formData.email}
+          onChange={handleChange}
+        />
+
+        <FormRow
+          type="text"
+          name="phone"
+          value={formData.phone}
           onChange={handleChange}
         />
 
