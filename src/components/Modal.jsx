@@ -1,16 +1,14 @@
-import { FaTimes } from "react-icons/fa";
-import { useSidebarModalContext } from "../context/SidebarModalContext";
-const Modal = ({ children }) => {
-  const { isModalOpen, closeModal } = useSidebarModalContext();
+function Modal({ onClose }) {
   return (
-    <div className={isModalOpen ? "modal-overlay show-modal" : "modal-overlay"}>
-      <div className="modal-container">
-        <div>{children}</div>
-        <button className="close-modal-btn" onClick={closeModal}>
-          <FaTimes />
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <h2>Contact Us</h2>
+        <p>Email: mporteous@demobia.com</p>
+        <button className="btn" onClick={onClose}>
+          Close
         </button>
       </div>
     </div>
   );
-};
+}
 export default Modal;
