@@ -184,7 +184,8 @@ Hero
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
+  align-items: center;
+  margin-bottom: 110px;
 }
 .header div {
   font-size: 35px;
@@ -198,7 +199,7 @@ Hero
 .icon-linkedin {
   font-size: 30px;
   color: var(--clr-white);
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 .hero-banner {
   color: var(--clr-white);
