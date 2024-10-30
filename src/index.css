@@ -178,7 +178,7 @@ Hero
   background: var(--clr-primary-5);
   padding: 30px 80px;
   background:
-    linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./assets/images/image.png") center/cover no-repeat;
 }
 .header {
@@ -280,6 +280,12 @@ Hero
 @media screen and (max-width: 768px) {
   .hero {
     padding: 5%;
+  }
+  .logo {
+    height: 20px;
+  }
+  .icon-linkedin {
+    font-size: 25px;
   }
   .hero-banner {
     padding: 0;
