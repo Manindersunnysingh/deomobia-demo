@@ -6,8 +6,8 @@ function Header() {
   return (
     <div className="header">
       <div>
-        {/* <Logo /> */}
-        demobia
+        <Logo />
+        {/* demobia */}
       </div>
       <a
         href="https://www.linkedin.com/company/demobia/"
