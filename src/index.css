@@ -67,10 +67,10 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
+/* img:not(.nav-logo) {
   width: 100%;
   display: block;
-}
+} */
 
 h1,
 h2,
@@ -283,7 +283,7 @@ Hero
   }
   .logo {
     height: 20px;
-    width: 123px;
+    width: 123px !important;
   }
   .icon-linkedin {
     font-size: 25px;
